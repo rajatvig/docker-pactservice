@@ -20,7 +20,7 @@ RUN mkdir -p $LOG_DIR && \
     apt-get install -y supervisor nginx && \
     rm -rf /var/lib/apt/lists/*
 
-RUN gem install pact-mock_service
+RUN gem install -v 0.10.2 pact-mock_service
 
 WORKDIR /var/run
 
